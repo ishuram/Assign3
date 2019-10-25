@@ -1,0 +1,12 @@
+C:\Users\ishur\OneDrive\Desktop\Sen8040\AwesomeCalculator_Mutant1\AwesomeCalculator_Mutant1Tests\bin\Debug\AwesomeCalculator_Mutant1Tests.dll
+C:\Users\ishur\OneDrive\Desktop\Sen8040\AwesomeCalculator_Mutant1\AwesomeCalculator_Mutant1Tests\bin\Debug\AwesomeCalculator_Mutant1Tests.pdb
+C:\Users\ishur\OneDrive\Desktop\Sen8040\AwesomeCalculator_Mutant1\AwesomeCalculator_Mutant1Tests\bin\Debug\AwesomeCalculator_Mutant1.exe
+C:\Users\ishur\OneDrive\Desktop\Sen8040\AwesomeCalculator_Mutant1\AwesomeCalculator_Mutant1Tests\bin\Debug\nunit.framework.dll
+C:\Users\ishur\OneDrive\Desktop\Sen8040\AwesomeCalculator_Mutant1\AwesomeCalculator_Mutant1Tests\bin\Debug\AwesomeCalculator_Mutant1.pdb
+C:\Users\ishur\OneDrive\Desktop\Sen8040\AwesomeCalculator_Mutant1\AwesomeCalculator_Mutant1Tests\bin\Debug\AwesomeCalculator_Mutant1.exe.config
+C:\Users\ishur\OneDrive\Desktop\Sen8040\AwesomeCalculator_Mutant1\AwesomeCalculator_Mutant1Tests\bin\Debug\nunit.framework.xml
+C:\Users\ishur\OneDrive\Desktop\Sen8040\AwesomeCalculator_Mutant1\AwesomeCalculator_Mutant1Tests\obj\Debug\AwesomeCalculator_Mutant1Tests.csprojAssemblyReference.cache
+C:\Users\ishur\OneDrive\Desktop\Sen8040\AwesomeCalculator_Mutant1\AwesomeCalculator_Mutant1Tests\obj\Debug\AwesomeCalculator_Mutant1Tests.csproj.CoreCompileInputs.cache
+C:\Users\ishur\OneDrive\Desktop\Sen8040\AwesomeCalculator_Mutant1\AwesomeCalculator_Mutant1Tests\obj\Debug\AwesomeCalculator_Mutant1Tests.csproj.CopyComplete
+C:\Users\ishur\OneDrive\Desktop\Sen8040\AwesomeCalculator_Mutant1\AwesomeCalculator_Mutant1Tests\obj\Debug\AwesomeCalculator_Mutant1Tests.dll
+C:\Users\ishur\OneDrive\Desktop\Sen8040\AwesomeCalculator_Mutant1\AwesomeCalculator_Mutant1Tests\obj\Debug\AwesomeCalculator_Mutant1Tests.pdb
