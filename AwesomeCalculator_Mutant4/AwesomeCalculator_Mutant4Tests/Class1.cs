@@ -11,6 +11,75 @@ namespace AwesomeCalculator_Mutant4Tests
     [TestFixture]
     class ClassTests
     {
+       
+        [Test]
+        public void GetDivision_Input9999and3_Returns3333() //mutant1-division
+        {
+            //Arrage
+            double number1 = 9999;
+            double number2 = 3;
+
+            double expectedResult = number1 / number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+
+        }
+        [Test]
+        public void GetDivision_Inputminus6and3_Returnsminus2() //mutant2-division
+        {
+            //Arrage
+            double number1 = -6;
+            double number2 = 3;
+
+            double expectedResult = number1 / number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+
+        }
+        [Test]
+        public void GetDivision_Input0and3_Returns0() //mutant3-division
+        {
+            //Arrage
+            double number1 = 0;
+            double number2 = 3;
+
+            double expectedResult = number1 / number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+
+        }
+        [Test]
+        public void GetDivision_Inputminus10andminus10_Returns1() //mutant4-division
+        {
+            //Arrage
+            double number1 = -10;
+            double number2 = -10;
+
+            double expectedResult = number1 / number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+
+        }
         [Test]
         public void GetAddition_Inputminus99andminus1_Returnsminus100() //testcase1-addition
         {
@@ -60,7 +129,7 @@ namespace AwesomeCalculator_Mutant4Tests
             Assert.AreEqual(expectedResult, actualResult);
 
         }
-       
+
         [Test]
         public void GetSubtraction_Inputminus999andminus999_Returns0()  //testcase1-subtraction
         {
@@ -110,7 +179,7 @@ namespace AwesomeCalculator_Mutant4Tests
             Assert.AreEqual(expectedResult, actualResult);
 
         }
-        
+
         [Test]
         public void GetMultiplication_Input3point9and3point3_Returns12point87()  //testcase1-multiplication
         {
@@ -163,7 +232,7 @@ namespace AwesomeCalculator_Mutant4Tests
             Assert.AreEqual(expectedResult, actualResult);
 
         }
-       
+
         [Test]
         public void GetDivision_Inputminus10andminus5_Returnsminus2()  //testcase1-division
         {
@@ -217,75 +286,6 @@ namespace AwesomeCalculator_Mutant4Tests
             Assert.AreEqual(expectedResult, actualResult);
 
         }
-        [Test]
-        public void GetDivision_Input9999and3_Returns29997() //mutant1-division
-        {
-            //Arrage
-            double number1 = 9999;
-            double number2 = 3;
-
-            double expectedResult = number1 * number2;
-            Calc testCalc = new Calc(number1, number2);
-
-            //Act
-            double actualResult = testCalc.GetDivision();
-
-            //Assert
-            Assert.AreEqual(expectedResult, actualResult);
-
-        }
-        [Test]
-        public void GetDivision_Inputminus5and3_Returnsminus15() //mutant2-division
-        {
-            //Arrage
-            double number1 = -5;
-            double number2 = 3;
-
-            double expectedResult = number1 * number2;
-            Calc testCalc = new Calc(number1, number2);
-
-            //Act
-            double actualResult = testCalc.GetDivision();
-
-            //Assert
-            Assert.AreEqual(expectedResult, actualResult);
-
-        }
-        [Test]
-        public void GetDivision_Input333and3_Returns999() //mutant3-division
-        {
-            //Arrage
-            double number1 = 333;
-            double number2 = 3;
-
-            double expectedResult = number1 * number2;
-            Calc testCalc = new Calc(number1, number2);
-
-            //Act
-            double actualResult = testCalc.GetDivision();
-
-            //Assert
-            Assert.AreEqual(expectedResult, actualResult);
-
-        }
-        [Test]
-        public void GetDivision_Inputminus10andminus10_Returns100() //mutant4-division
-        {
-            //Arrage
-            double number1 = -10;
-            double number2 = -10;
-
-            double expectedResult = number1 * number2;
-            Calc testCalc = new Calc(number1, number2);
-
-            //Act
-            double actualResult = testCalc.GetDivision();
-
-            //Assert
-            Assert.AreEqual(expectedResult, actualResult);
-
-        }
-
 
     }
 }
