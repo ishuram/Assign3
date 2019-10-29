@@ -11,6 +11,78 @@ namespace AwesomeCalculator_Mutant3Tests
     [TestFixture]
     class ClassTests
     {
+       
+        [Test]
+        public void GetMultiplication_Input99andminus1_Returnsminus99() //mutant1-multiplication
+        {
+            //Arrage
+            double number1 = 99;
+            double number2 = -1;
+
+            double expectedResult = number1 * number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetMultiplication();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+
+        }
+        
+        [Test]
+        public void GetMultiplication_Inputminus22andminus2_Returns44() //mutant2-multiplication
+        {
+            //Arrage
+            double number1 = -22;
+            double number2 = -2;
+
+            double expectedResult = number1 * number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetMultiplication();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+
+        }
+        [Test]
+        public void GetMultiplication_Input10000and5_Returns50000() //mutant3-multiplication
+        {
+            //Arrage
+            double number1 = 10000;
+            double number2 = 5;
+
+            double expectedResult = number1 * number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetMultiplication();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+
+        }
+
+        [Test]
+        public void GetMultiplication_Input0and100_Returns0() //mutant4-multiplication
+        {
+            //Arrage
+            double number1 = 0;
+            double number2 =100;
+
+            double expectedResult = number1 * number2;
+
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetMultiplication();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+
+        }
         [Test]
         public void GetAddition_Inputminus99andminus1_Returnsminus100() //testcase1-addition
         {
@@ -60,7 +132,7 @@ namespace AwesomeCalculator_Mutant3Tests
             Assert.AreEqual(expectedResult, actualResult);
 
         }
-       
+
         [Test]
         public void GetSubtraction_Inputminus999andminus999_Returns0()  //testcase1-subtraction
         {
@@ -110,7 +182,7 @@ namespace AwesomeCalculator_Mutant3Tests
             Assert.AreEqual(expectedResult, actualResult);
 
         }
-        
+
         [Test]
         public void GetMultiplication_Input3point9and3point3_Returns12point87()  //testcase1-multiplication
         {
@@ -163,7 +235,7 @@ namespace AwesomeCalculator_Mutant3Tests
             Assert.AreEqual(expectedResult, actualResult);
 
         }
-       
+
         [Test]
         public void GetDivision_Inputminus10andminus5_Returnsminus2()  //testcase1-division
         {
@@ -217,78 +289,6 @@ namespace AwesomeCalculator_Mutant3Tests
             Assert.AreEqual(expectedResult, actualResult);
 
         }
-        
-        [Test]
-        public void GetMultiplication_Input99andminus1_Returnsminus99() //mutant1-multiplication
-        {
-            //Arrage
-            double number1 = 99;
-            double number2 = -1;
-
-            double expectedResult = number1 * number2;
-            Calc testCalc = new Calc(number1, number2);
-
-            //Act
-            double actualResult = testCalc.GetMultiplication();
-
-            //Assert
-            Assert.AreEqual(expectedResult, actualResult);
-
-        }
-        
-        [Test]
-        public void GetMultiplication_Inputminus22andminus2_Returns11() //mutant2-multiplication
-        {
-            //Arrage
-            double number1 = -22;
-            double number2 = -2;
-
-            double expectedResult = number1 / number2;
-            Calc testCalc = new Calc(number1, number2);
-
-            //Act
-            double actualResult = testCalc.GetMultiplication();
-
-            //Assert
-            Assert.AreEqual(expectedResult, actualResult);
-
-        }
-        [Test]
-        public void GetMultiplication_Input10000and5_Returns2000() //mutant3-multiplication
-        {
-            //Arrage
-            double number1 = 10000;
-            double number2 = 5;
-
-            double expectedResult = number1 / number2;
-            Calc testCalc = new Calc(number1, number2);
-
-            //Act
-            double actualResult = testCalc.GetMultiplication();
-
-            //Assert
-            Assert.AreEqual(expectedResult, actualResult);
-
-        }
-
-        [Test]
-        public void GetMultiplication_Input0and100_Returns0() //mutant4-multiplication
-        {
-            //Arrage
-            double number1 = 0;
-            double number2 =100;
-
-            double expectedResult = number1 / number2;
-            Calc testCalc = new Calc(number1, number2);
-
-            //Act
-            double actualResult = testCalc.GetMultiplication();
-
-            //Assert
-            Assert.AreEqual(expectedResult, actualResult);
-
-        }
-
 
 
     }
